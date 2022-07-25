@@ -1,0 +1,36 @@
+/* for below 640 */
+
+@media (max-width: 40em) {
+  .product-card {
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+  }
+
+  .product-image,
+  .product-details {
+    max-width: 100%;
+  }
+
+  .image {
+    display: none;
+  }
+  .image2 {
+    width: 100%;
+    display: block;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .price,
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

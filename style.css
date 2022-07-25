@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.product-card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  max-width: 65rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem #777;
+}
+
+.product-image,
+.product-details {
+  height: 100%;
+  max-width: 50%;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.image2 {
+  display: none;
+}
+
+.product-details {
+  padding: 4rem;
+}
+
+.product-about {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #777;
+  letter-spacing: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.product-title {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.product-description {
+  color: #777;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.price {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.price span:nth-of-type(2) {
+  font-size: 1.4rem;
+  color: #777;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #777;
+}
+
+.cart-button {
+  margin-top: 3rem;
+  padding: 1.2rem 6.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  transition: all 0.7s;
+}
+
+.cart-button:hover {
+  color: #555;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(158, 36%, 37%);
+}
